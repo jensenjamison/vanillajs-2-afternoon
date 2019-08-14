@@ -71,7 +71,7 @@ In this step, we'll add a way for our application to `listen` for the mouse to m
 
 - We need to make a new event listener for any time the mouse moves. To do this we are going to use `addEventListener` on the window object.
 - using `window.addEventListener` we are going to invoke it and pass in a string, stating what event we are waiting for, `mousemove`.
-- We will also pass in a function being the task to be performed when the mouse moves. We can either write the function inline as a function expression `('mousemove' function(){})` or make a name function and pass that in, `('mousemove', onMove)`. It will not make a difference either way.
+- We will also pass in a function being the task to be performed when the mouse moves. We can either write the function inline as a function expression `('mousemove', function(){})` or make a name function and pass that in, `('mousemove', onMove)`. It will not make a difference either way.
 - This function will get passed in an argument which is an `event` object, full of information about the event that just happened. To make it more clear lets call it `mouseMoveEvent`. Two of the properties on the `mouseMoveEvent` object is the x axis position, and the y axis position as `mouseMoveEvent.pageX` and `mouseMoveEvent.pageY`.
 - We are going to overwrite the `mousePosition.x` and `mousePosition.y` with these two values so we can use it for later.
 
